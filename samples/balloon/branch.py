@@ -90,7 +90,7 @@ class BranchDataset(utils.Dataset):
         self.add_class("branch", 1, "branch")
 
         # Train or validation dataset?
-        assert subset in ["train", "val", "test"]
+        assert subset in ["train", "val"]
         dataset_dir = os.path.join(dataset_dir, subset)
 
         # Load annotations
